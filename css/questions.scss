@@ -1,0 +1,142 @@
+
+.page {
+
+	&__question-block {
+		background: $bg3;
+		padding: 100px 0;
+	}
+}
+.question-block {
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+	}
+
+	&__header {
+		margin: 0px 0px 62px 0px;
+	}
+
+	&__title {
+		margin: 0px 0px 18px 0px;
+	}
+
+
+	&__body {
+	}
+
+	&__row {
+		display: flex;
+		margin: 0px -27.5px;
+		background:  url('../img/question/Combined\ shape.svg') 33% 22% no-repeat, url('../img/question/Combined\ shape.svg') 70% 22% no-repeat;
+	
+	@media (max-width: 768px) {
+		background: none;
+		margin: 0;
+	}
+
+	@media (max-width: 480px) {
+		background: none;
+		flex-direction: column;
+	}
+
+	}
+
+
+	&__column {
+		padding: 0px 27.5px;
+		flex: 1 1 33.333%;
+
+		@media (max-width: 768px) {
+			padding: 0;
+			flex: 1 1 33.333%;
+		}
+	}
+}
+
+.column {
+
+	&__item {
+		
+		@media (max-width: 480px) {
+			display: flex;
+			margin-bottom: 31px;
+	
+		}
+	}
+
+
+
+	&__subtitle {
+		margin: 0px 0px 7px 0px;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 28px;
+		color: #292929;
+	}
+}
+
+.column__body {
+	
+	@media (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		margin-left: 12px;
+		justify-content: center;
+		align-items: center;
+
+	
+	}
+
+	@media (max-width: 480px) {
+		width: 65%;
+		text-align: left;
+		align-items: flex-start;
+	}
+}
+
+
+.collumn {
+
+	&__image {
+		margin: 0px 0px 23px 0px;
+		height: 128px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: url('../img/question/Эллипс\ 2.png') 50% no-repeat;
+	
+	@media (max-width: 480px) {
+		flex: 0 1 128px;
+		justify-content: center;
+		margin: 0;
+	}
+
+	}
+
+		
+
+	&__pic {
+		width: 100%;
+		width: 68px;
+		height: 68px;
+		left: 50%;
+		top: 50%;
+
+		@media (max-width: 480px) {
+			width: 100%;
+			width: 68px;
+			height: 68px;
+			left: 50%;
+			top: 50%;
+		}
+	}
+
+}
+
+
+
+

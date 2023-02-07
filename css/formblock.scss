@@ -1,0 +1,181 @@
+.page {
+
+	&__order-block {
+		color: #FFFFFF;
+		background: #181818;
+	}
+}
+.order-block {
+	padding: 68px 0px 85px 0px;
+
+	&__container {
+		flex-direction: column;
+		
+		
+		
+	}
+
+	&__title {
+		margin: 0px 0px 58px 0px;
+		text-align: center;
+		color: #FFFFFF;
+	}
+}
+.title {
+}
+.form {
+	display: flex;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__collumn {
+		display: flex;
+		flex-direction: column;
+		margin: 0px --27px;
+
+		@media (max-width: 768px) {
+			margin: 0;
+		}
+	}
+
+	&__row {
+		display: flex;
+		max-width: 480px;
+		padding: 0px 27px;
+
+		@media (max-width: 768px) {
+			padding: 0;
+		}
+	}
+
+
+	&__block {
+		margin-right: 17px;
+		margin-bottom: 31px;
+		width: 100%;
+		
+		&:last-child {
+			margin-right: 0;
+
+		}
+	}
+
+	&__title {
+		margin: 0px 0px 6px 0px;
+	}
+
+	&__input {
+		width: 100%;
+		height: 58px;
+		border-radius: 4px;
+
+		&:hover {
+			border: 3px solid #E01F3D;
+			border-radius: 4px;
+		}
+	}
+
+
+	&__input--textarea {
+		height: 169px;
+	}
+}
+.collumn {
+}
+.row {
+}
+
+.form {
+
+	&__controls {
+		display: flex;
+		flex-wrap: wrap;
+    padding: 0px 0px 0px 27px;
+		margin: 18px 0px 0px 0px;
+	}
+}
+.radio {
+	display: flex;
+	margin-right: 16px;
+	align-items: center;
+	padding: 0px 0px 18px 0px;
+	cursor: pointer;
+
+	&__elem {
+	display: none;
+
+	&:checked ~ .radio__visible {
+		&::before {
+			display: block;
+		}
+	}
+	}
+
+	&__visible {
+		width: 25px;
+    height: 25px;
+		background: #FFFFFF;
+		border-radius: 50%;
+		position: relative;
+
+		&::before {
+			content: "";
+			width: 13px;
+			height: 13px;
+			background: #E01F3D;
+			position: absolute;
+			border-radius: 50%;
+			display: none;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	&__title {
+		padding: 0px 0px 0px 10px;
+	}
+
+	&--checkbox {
+		.radio__visible {
+			border-radius: 0;
+
+			&::before {
+				background: url(../img/order/Vector.svg);
+		}
+		
+
+		}
+	}
+}
+
+
+.form {
+	padding: 0px 0px 0px 27px;
+
+	&__btns {
+		margin: 46px 0px 0px 0px;
+	
+	}
+}
+.btn {
+	width: 163px;
+	height: 60px;
+	background: #CA1B36;
+	border-radius: 100px;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.12rem;
+	color: #FFFFFF;
+	border: none;
+	margin-right: -25px;
+
+
+	&--transparent {
+		background: transparent;
+	}
+}
+

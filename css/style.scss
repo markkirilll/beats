@@ -1,590 +1,190 @@
-*{padding: 0;margin: 0;border: 0;}
-*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-nav,footer,header,aside{display: block;}
-html,body{height:100%;width:100%;font-family:Play;font-size:100%;line-height:1;font-size:16px;font-weight:400;color:#292929;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
-input,button,textarea{font-family:inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding:0;border:0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
-
-// ----------------------------------------НАЧАЛО ВЕРСТКИ----------------------------
-
-.wrapper {
-	min-height: 100%;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-}
-
-.container {
-	width: 980px;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-}
-
-//--------------------------------------HEADER-------------------------------------------
-
-.header {
-	position: absolute;
-	width: 100%;
-	left: 0;
-	top: 0;
-	z-index: 100;
-
-	&__container {
-		min-height: 100px;
-	}
-
-	&__menu {
-		margin: 0px 0px 0px 51px;
-	}
-
-	&__contacts {
-	}
-}
-.container {
-}
-.logo {
-
-	&__image {
-	}
-}
-.menu {
-	font-family: 'Alegreya Sans';
-	font-size: 18px;
-	line-height: 30px;
-
-	&__list {
-		display: flex;
-	}
-
-	&__item {
-		margin: 0px 25px 0px 0px;
-	}
-
-	&__item:last-child {
-		margin: 0;
-	}
-
-	&__link {
-		font-size: 18px;
-		line-height: 30px;
-		color: #292929;
-	}
-}
-.contacts {
-	margin: 0px 0px 0px 46px;
-
-	&__icon {
-	}
-
-	&__image {
-	}
-}
-.contacts-phone {
-	font-size: 18px;
-	line-height: 18px;
-	color: #292929;
-	margin: 0px 0px 0px 6px;
-}
+// --------------------------------- ШРИФТЫ -----------------------------------------------------
 
 
-// ---------------------------------------- MAIN -----------------------------------------
 
-.page {
-	
-}
+// ----------------------------------------------------------------------------------------------------
 
-.page {
-	flex: 1 1 auto;
-	background: #F5F5F5;
+@import "nullstyle.scss";
 
-	&__main-block {
-		padding: 114px 0px 52px 0px;
-	}
-}
-.main-block {
+// ---------------------------PEREMENNIE--------------------------------------------------------------
 
-	&__container {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
+// $minWidth: 320px;
+// $maxWidth: 1100px;
+// $maxWidthContainer: 915px;
+// $md1: $maxWidthContainer + 15;
+// $md2: 767.98;
+// $md3: 479.98;
 
-	&__body {
-		display: flex;
-		width: 980px;
-		margin: 0 auto;
-		display: flex;
-		justify-content: space-between;
-	}
+// ------------------------------------------------------------------------------------------------------
 
-	&__description {
-		max-width: 400px;
-		padding: 51px 0px 67px 0px;
-	}
-	
-	&__title {
-	}
+$bg1: #F5F5F5;
+$bg2: #F8FAF9;
+$bg3: #FFFFFF;
 
-	&__subtitle {
-		font-size: 21px;
-		line-height: 25px;
-		margin: 22px 0px 0px 0px;
-		font-family: 'Alegreya Sans';
-	}
+// -------------------------------- TEXT COLOR -------------------------------------------------------
 
-	&__button {
-		margin: 36px 0px 0px 0px;
-	}
+$colbtn: #E01F3D;
+$txcol1: #292929;
+$txcol2: #666666;
 
-	&__image {
-		position: absolute;
-		top: 20%;
-		left: 45%;
-	}
+// --------------------------------- TITLE STYLE ----------------------------------------------------
 
-	&__pic {
-		border-radius: 50%;
-	}
 
-	&__row {
-		max-width: 504px;
-	}
-}
-.container {
-}
-.title {
+%tpltitle1 {
+	font-style: normal;
 	font-weight: 700;
 	font-size: 48px;
 	line-height: 52px;
 	text-transform: uppercase;
+	color: #292929;
 }
-.subtitle {
+
+%tpltitle2	{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+	text-transform: uppercase;
+	color: #292929;
 }
-.button {
-	width: 163px;
-	height: 54px;
-	background: #E01F3D;
-	border-radius: 100px;
-	text-align: center;
-	padding: 18px 0px;
 
-	&__link {
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 18px;
-		color: #FFFFFF;
-	}
+%tpltitle1mob {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 36px;
+	text-transform: uppercase;
+	color: #292929;
 }
-.paginator {
 
-	&__list {
-		display: flex;
-		flex-direction: column;
-		padding: 133px 0px 0px 0px;
-	}
-
-	&__item {
-		margin: 0px 0px 6px 0px;
-		width: 18px;
-		height: 18px;
-		justify-content: center;
-		display: flex;
-		background-color: transparent;
-		width: 18px;
-		height: 18px;
-		border-radius: 50%;
-		padding-top: 31%;
-	}
-
-	&__item-active {
-		margin: 0px 0px 6px 0px;
-		border: 1px solid #E01F3D;
-		width: 18px;
-		height: 18px;
-		border-radius: 50%;
-		padding-top: 31%;
-	}
-
-	&__icon-active {
-	}
-
-	&__icon {
-	}
+%tpltitle2mob	{
+	font-style: normal;
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 32px;
+	text-transform: uppercase;
+	color: #292929;
 }
-.row {
+
+%tpltext	{
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #666666;
+}
+
+
+@mixin shrift($ff,$fst,$fw,$fz,$lh,$col) {
+font-family: $ff;
+font-style: $fst;
+font-weight: $fw;
+font-size: $fz;
+line-height: $lh;
+color: $col;
+}
+
+
+
+
+
+
+// ----------------------------------------НАЧАЛО ВЕРСТКИ----------------------------
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
 	display: flex;
-
-	&__pic {
-	}
-
-	&__text {
-		margin: 0px 0px 0px 12px;
-	}
+	flex-direction: column;
+	position: relative;
 }
-.collumn {
 
-	&__row {
-		display: flex;
-		align-items: center;
-		margin: 0px 23px 0px 0px;
-	}
-	&__row:last-child {
-		margin-right: 0;
+body {
+	&.lock {
+		overflow: hidden;
 	}
 }
 
+.page {
+	flex: 1 1 auto;
+	
+}
+
+// ------------ запись для технического контейнера ------------------------------
+
+// [class*="__container"] {
+// 	max-width: 945px;
+// 	margin: 0 auto;
+// 	padding: 0 15px;
+// }
+
+.container {
+	max-width: 945px;
+	margin: 0 auto;
+	padding: 0 15px;
+	}
+
+	// --------------------------------------------------------------------------------
+
+	* img {
+		max-width: 100%;
+	}
+ 
+
+
+// @media (max-width:1070px) {
+// 	.container {
+// 		max-width: 880px;
+// 	}
+// }
+
+// @media (max-width:999px) {
+// 	.container {
+// 		max-width: 780px;
+// 	}
+// }
+
+// @media (max-width:900px) {
+// 	.container {
+// 		max-width: 768px;
+// 	}
+// }
+
+
+
+
+.title {
+	@extend %tpltitle1;
+}
+
+.text {
+	@extend %tpltext;
+}
+
+//--------------------------------------HEADER-------------------------------------------
+
+@import "./header.scss";
+
+// ---------------------------------------- MAIN -----------------------------------------
+
+@import "./mainsection.scss";
 
 //------------------------------------------ QUESTION -----------------------------------
 
+@import "./questions.scss";
 
-.page {
+// ----------------------------------------- SHOP -------------------------------------------
 
-	&__question-block {
-	}
-}
-.question-block {
-	background: #FFFFFF;
-
-	&__container {
-		padding: 118px 0px;
-		flex-direction: column;
-	}
-
-	&__header {
-		text-align: center;
-		max-width: 593px;
-	}
-
-	&__title {
-	}
-
-	&__text {
-		margin: 18px 0px 0px 0px;
-	}
-
-	&__row {
-		justify-content: space-between;
-		margin: 68px 0px 0px 0px;
-	}
-}
-.container {
-}
-.title {
-}
-.text {
-}
-.row {
-	width: 980px;
-
-	&__collumn-about {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: start;
-	}
-}
-.collumn-about {
-
-	&__image {
-		width: 128px;
-		height: 128px;
-		border-radius: 50%;
-		background: #F2F5F4;
-		text-align: center;
-	}
-
-	&__pic {
-		position: relative;
-		top: 25%;
-	}
-}
-.column-about {
-
-	&__subtitle {
-		font-style: normal;
-		font-weight: 700;
-		font-size: 24px;
-		line-height: 28px;
-		margin: 24px 0px 0px 0px;
-	}
-
-	&__text {
-		margin: 7px 0px 0px 0px;
-		text-align: center;
-		padding: 0px 41px;
-		line-height: 1.1;
-	}
-}
-
+@import "./shop.scss";
 
 //--------------------------------------- REWIEWS------------------------------------------
 
-.page {
-
-	&__rewiews-block {
-		background: #FFFFFF;
-	}
-}
-.rewiwes-block {
-
-
-	&__container {
-		flex-direction: column;
-		padding: 68px 0px;
-	}
-
-	&__title {
-		margin: 0px 0px 32px 0px;
-	}
-
-.rewiews-block {
-
-		&__pic {
-			position: absolute;
-    padding-top: 44px;
-		}
-}
-
-
-	&__body {
-		display: flex;
-		background: #F8FAF9;
-		width: 940px;
-
-
-	}
-}
-.container {
-}
-.body {
-
-	&__image {
-		padding: 42px;
-	}
-
-	&__picture {
-	}
-
-	&__description {
-		padding: 74px 100px 64px 0px;
-	}
-
-	&__title {
-		font-weight: 700;
-		font-size: 24px;
-		line-height: 28px;
-		margin: 0px 0px 27px 0px;
-	}
-
-	&__text {
-		// font-weight: 400;
-		// font-size: 16px;
-		// line-height: 19px;
-		margin: 0px 0px 38px 0px;
-	}
-
-	&__name {
-		font-weight: 700;
-		font-size: 18px;
-		line-height: 21px;
-	}
-}
-
-.rewiwes-block {
-
-	&__list {
-		display: flex;
-		margin: 15px 0px 0px 0px;
-	}
-
-	&__item {
-		margin-right: 6px;
-	}
-}
-.rewiew {
-
-	&__image {
-	}
-}
+@import "./rewiewsblock.scss";
 
 // ----------------------------------------------- FORM -----------------------------------
 
-.page {
-
-	&__order-block {
-		color: #FFFFFF;
-	}
-}
-.order-block {
-
-	&__container {
-		flex-direction: column;
-		padding: 68px 0px 85px 0px;
-		background: #181818;
-	}
-
-	&__title {
-		margin: 0px 0px 58px 0px;
-	}
-}
-.container {
-}
-.title {
-}
-.form {
-	display: flex;
-
-	&__collumn {
-		display: flex;
-		flex-direction: column;
-		margin: 0px --27px;
-	}
-
-	&__row {
-		display: flex;
-		max-width: 480px;
-		padding: 0px 27px;
-	}
-
-
-	&__block {
-		margin-right: 17px;
-		margin-bottom: 31px;
-		width: 100%;
-		
-		&:last-child {
-			margin-right: 0;
-
-		}
-	}
-
-	&__title {
-		margin: 0px 0px 6px 0px;
-	}
-
-	&__input {
-		width: 100%;
-		height: 58px;
-		border-radius: 4px;
-
-		&:hover {
-			border: 3px solid #E01F3D;
-			border-radius: 4px;
-		}
-	}
-
-
-	&__input--textarea {
-		height: 169px;
-	}
-}
-.collumn {
-}
-.row {
-}
-
-.form {
-
-	&__controls {
-		display: flex;
-		flex-wrap: wrap;
-    padding: 0px 0px 0px 27px;
-		margin: 18px 0px 0px 0px;
-	}
-}
-.radio {
-	display: flex;
-	margin-right: 16px;
-	align-items: center;
-	padding: 0px 0px 18px 0px;
-	cursor: pointer;
-
-	&__elem {
-	display: none;
-
-	&:checked ~ .radio__visible {
-		&::before {
-			display: block;
-		}
-	}
-	}
-
-	&__visible {
-		width: 25px;
-    height: 25px;
-		background: #FFFFFF;
-		border-radius: 50%;
-		position: relative;
-
-		&::before {
-			content: "";
-			width: 13px;
-			height: 13px;
-			background: #E01F3D;
-			position: absolute;
-			border-radius: 50%;
-			display: none;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-	}
-
-	&__title {
-		padding: 0px 0px 0px 10px;
-	}
-
-	&--checkbox {
-		.radio__visible {
-			border-radius: 0;
-
-			&::before {
-				background: url(../img/order/Vector.svg);
-		}
-		
-
-		}
-	}
-}
-
-
-.form {
-	padding: 0px 0px 0px 27px;
-
-	&__btns {
-		margin: 46px 0px 0px 0px;
-	
-	}
-}
-.btn {
-	width: 163px;
-	height: 60px;
-	background: #CA1B36;
-	border-radius: 100px;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 18px;
-	color: #FFFFFF;
-	border: none;
-	margin-right: -25px;
-
-
-	&--transparent {
-		background: transparent;
-	}
-}
-
-
+@import "./formblock.scss";
 
 
 
@@ -596,7 +196,5 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 	&__container {
 		display: flex;
 	}
-}
-.container {
 }
 

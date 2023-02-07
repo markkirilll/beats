@@ -1,0 +1,100 @@
+.page {
+
+	&__rewiews-block {
+		background: #FFFFFF;
+		padding: 65px 0px;
+	}
+}
+.rewiwes-block {
+
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		display: flex;
+    justify-content: center;
+		margin: 0px 0px 32px 0px;
+		z-index: 5;
+	}
+
+.rewiews-block {
+	position: relative;
+}
+
+
+	&__body {
+		display: flex;
+		background: $bg2 url('../img/rewiews/round.svg') center -20% no-repeat; 
+	}
+}
+.body {
+	display: flex;
+
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+
+	&__image {
+		padding: 42px;
+		flex: 0 1 253px;
+	
+		@media (max-width: 768px) {
+			padding: 56px 23px 15px 23px;
+			flex: 0 1 130px;
+			margin: 0 auto;
+		}
+	}
+
+	&__picture {
+		min-width: 130px;
+	}
+
+	&__description {
+		padding: 74px 100px 64px 0px;
+		flex: 1 1 auto;
+
+		@media (max-width: 768px) {
+			text-align: center;
+			padding: 32px 0px;
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 1.5rem;
+		line-height: 1.75rem;
+		margin: 0px 0px 27px 0px;
+	}
+
+	&__text {
+		margin: 0px 0px 38px 0px;
+	}
+
+	&__name {
+		font-weight: 700;
+		font-size: 1.12rem;
+		line-height: 1.3rem;
+	}
+}
+
+.rewiwes-block {
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 15px 0px 63px 0px;
+	}
+
+	&__item {
+		margin-right: 6px;
+	}
+}
+.rewiew {
+
+	&__image {
+	}
+}
