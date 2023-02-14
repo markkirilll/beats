@@ -51,6 +51,7 @@
 			display: flex;
 			flex-direction: column;
 			text-align: center;
+			align-items: center;
 		}
 	}
 	
@@ -66,11 +67,10 @@
 
 	&__button {
 		margin: 36px 0px 0px 0px;
+		padding: 18px 0px;
 
 		@media (max-width: 768px) {
-			position: relative;
-			top: 0;
-			left: 35%;
+			padding: 18px 30px;
 		}
 	}
 
@@ -78,7 +78,7 @@
 		flex: 0 1 489px;
 
 		@media (max-width: 768px) {
-			flex: 0 1 323px;
+			flex: 0 1 323px;	
 		}
 	}
 
@@ -113,7 +113,7 @@
 	background: #E01F3D;
 	border-radius: 100px;
 	text-align: center;
-	padding: 18px 0px;
+	
 
 	&__link {
 		font-weight: 700;

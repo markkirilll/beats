@@ -1,0 +1,102 @@
+
+.footer {
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 5.375rem;
+
+		@media (max-width: 480px) {
+			flex-direction: column;
+			padding: 20px 0px 31px 0px;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+.container {
+}
+.information {
+
+	&__adress {
+		margin-bottom: 12px;
+
+	}
+
+	&__contact {
+		position: relative;
+		margin-bottom: 19px;
+		@media (max-width: 480px) {
+			text-align: center;
+		}
+
+
+	}
+}
+
+
+
+.contact {
+
+	@media (max-width: 480px) {
+	}
+
+	&__icon {
+		position: absolute;
+    top: 3px;
+		@media (max-width: 480px) {
+		}
+	}
+
+	&__image {
+		align-items: center;
+		@media (max-width: 480px) {
+		}
+	}
+}
+.contact-phone {
+font-size: 16px;
+line-height: 21px;
+text-transform: uppercase;
+color: #292929;
+margin-left: 20px;
+
+	@media (max-width: 480px) {
+	}
+}
+.socials {
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin-right: 10px;
+
+	}
+
+	&__item:last-child {
+			margin-right: 0;
+		}
+	
+	
+
+	&__link {
+		
+	}
+}
+.social {
+
+	&__item--icon--vk {
+	}
+
+	&__item--icon--fb {
+	}
+
+	&__item--icon--insta {
+	}
+
+	&__item--icon--telegram {
+	}
+}

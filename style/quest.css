@@ -1,0 +1,39 @@
+.page__question-block {}
+
+.question-block {
+	padding: 100px 0;
+}
+
+.question-block__container {}
+
+.container {}
+
+.question-block__header {}
+
+.question-block__title {}
+
+.title {}
+
+.question-block__text {}
+
+.text {}
+
+.question-block__body {}
+
+.question-block__row {}
+
+.question-block__column {}
+
+.column {}
+
+.column__item {}
+
+.collumn__image {}
+
+.collumn__pic {}
+
+.column__subtitle {}
+
+.column__text {
+	color: red;
+}

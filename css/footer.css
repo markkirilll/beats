@@ -1,0 +1,8 @@
+.footer {
+  height: 86px;
+}
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

@@ -29,6 +29,7 @@
 	@media (max-width: 768px) {
 		flex-direction: column;
 		align-items: center;
+		
 	}
 
 	&__collumn {
@@ -48,6 +49,10 @@
 
 		@media (max-width: 768px) {
 			padding: 0;
+
+		@media (max-width: 480px) {
+			max-width: 350px;
+			}
 		}
 	}
 
@@ -56,6 +61,10 @@
 		margin-right: 17px;
 		margin-bottom: 31px;
 		width: 100%;
+
+		@media (max-width: 768px) {
+			width: 600px;
+		}
 		
 		&:last-child {
 			margin-right: 0;
@@ -81,6 +90,10 @@
 
 	&__input--textarea {
 		height: 169px;
+
+		@media (max-width: 768px) {
+			height: 82px;
+		}
 	}
 }
 .collumn {
@@ -95,6 +108,15 @@
 		flex-wrap: wrap;
     padding: 0px 0px 0px 27px;
 		margin: 18px 0px 0px 0px;
+
+		@media (max-width: 768px) {
+			padding: 0px;
+
+		@media (max-width: 480px)	{
+			align-items: center;
+			justify-content: center;
+		}
+		}
 	}
 }
 .radio {
@@ -156,8 +178,17 @@
 .form {
 	padding: 0px 0px 0px 27px;
 
+	@media (max-width: 768px) {
+		padding: 0px;
+	}
+
 	&__btns {
 		margin: 46px 0px 0px 0px;
+
+		@media (max-width: 768px) {
+		margin: 0 auto;
+    padding: 46px 0px;
+		}
 	
 	}
 }

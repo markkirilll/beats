@@ -1,0 +1,48 @@
+.header {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 50;
+}
+
+.header__container {
+	display: flex;
+	min-height: 100px;
+	align-items: center;
+
+}
+
+
+.logo {}
+
+.logo__image {}
+
+.header__menu {
+	margin: 0px 0px 0px 100px;
+}
+
+.menu {}
+
+.menu__list {}
+
+.menu__item {}
+
+.menu__link {
+	font-family: 'Alegreya Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: calc(20 /16 * 100%);
+	color: #292929;
+}
+
+.header__contacts {}
+
+.contacts {}
+
+.contacts__icon {}
+
+.contacts__image {}
+
+.contacts-phone {}
